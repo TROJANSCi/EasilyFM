@@ -1,0 +1,17 @@
+{
+    "monitoring_path": [
+        "C:\\Users\\MaxD\\Downloads"
+    ],
+    "finally_path": "C:\\Users\\MaxD",
+    "finally_dir": "Downloads",
+    "black_list_file": [
+        "desktop.ini"
+    ],
+    "black_list_ext": [
+        ".crdownload",
+        ".download",
+        ".tvdownload",
+        ".opdownload",
+        ".tmp"
+    ]
+}
