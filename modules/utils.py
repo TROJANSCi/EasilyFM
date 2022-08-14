@@ -10,3 +10,7 @@ def open_finally_dir():
 
 def open_history():
     startfile(join(APP_DIR, "history.txt"))
+
+
+def open_settings():
+    startfile(join(join(APP_DIR, 'core'), 'settings.json'))

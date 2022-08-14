@@ -5,7 +5,7 @@ from os.path import dirname, abspath, join
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 
-from modules.utils import open_finally_dir, open_history
+from modules.utils import open_finally_dir, open_history, open_settings
 from modules.manager import monitoring_paths
 from core.language import dictionary
 
@@ -49,6 +49,7 @@ tray = QSystemTrayIcon()
 tray.setIcon(ico_icons)
 tray.setVisible(True)
 
+
 menu = QMenu()
 
 process = QAction(dictionary('start'))
@@ -66,6 +67,7 @@ exits.setIcon(ico_exits)
 exits.triggered.connect(app.quit)
 open_dir.triggered.connect(open_finally_dir)
 process.triggered.connect(process_monitor)
+settings.triggered.connect(open_settings)
 open_history_file.triggered.connect(open_history)
 
 menu.addAction(process)
