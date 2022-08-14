@@ -1,4 +1,4 @@
-import json
+import hjson
 from os import makedirs
 from os.path import expanduser, join, isdir
 
@@ -33,14 +33,16 @@ def check_finally_path() -> str:
 
 def change_settings(**kwargs):
     with open(set_file, 'r+') as f:
-        data = json.load(f)
-        for j in kwargs:
-            data[j] = kwargs[j] if j != 'monitoring_path' else [kwargs[j]]
-            f.seek(0)
-            json.dump(data, f, indent=4, ensure_ascii=False)
-            f.truncate()
-    f.close()
-    return kwargs.get(str(*kwargs))
+        h = hjson.load(f)
+        print(h)
+    #     data = hjson.load(f)
+    #     for j in kwargs:
+    #         data[j] = kwargs[j] if j != 'monitoring_path' else [kwargs[j]]
+    #         f.seek(0)
+    #         hjson.dump(data, f, indent=4, ensure_ascii=False)
+    #         f.truncate()
+    # f.close()
+    # return kwargs.get(str(*kwargs))
 
 
 def create_extension_directory(ext: str, finally_dir: str = check_finally_path()) -> str:
