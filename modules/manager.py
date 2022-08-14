@@ -41,7 +41,9 @@ def file_movie(files: list, path: str):
                         old = join(path, file)
                         new = join(file_path, file)
                         move(old, new)
-                        logging.info(f"{old} -> {new}")
+
+                        if get_configure().get('history'):
+                            logging.info(f"{old} -> {new}")
                     else:
                         cur = 1
                         name = f"[copy {cur}] {''.join(ext)}"
@@ -52,7 +54,9 @@ def file_movie(files: list, path: str):
                         old = join(path, file)
                         new = join(file_path, name)
                         move(old, new)
-                        logging.info(f"{old} -> {new}")
+
+                        if get_configure().get('history'):
+                            logging.info(f"{old} -> {new}")
 
                 except PermissionError:
                     return

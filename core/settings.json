@@ -13,5 +13,7 @@
         ".tvdownload",
         ".opdownload",
         ".tmp"
-    ]
+    ],
+    "history": false,
+    "language": "ru"
 }

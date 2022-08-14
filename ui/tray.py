@@ -7,6 +7,7 @@ from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 
 from modules.utils import open_finally_dir, open_history
 from modules.manager import monitoring_paths
+from core.language import dictionary
 
 status = False
 
@@ -20,11 +21,11 @@ def start_monitor():
 def process_monitor():
     global status
     if status:
-        process.setText("Start")
+        process.setText(dictionary('start'))
         process.setIcon(ico_start)
         status = False
     else:
-        process.setText("Stop")
+        process.setText(dictionary('stop'))
         process.setIcon(ico_stop)
         status = True
     thread = threading.Thread(target=start_monitor)
@@ -50,11 +51,11 @@ tray.setVisible(True)
 
 menu = QMenu()
 
-process = QAction("Start")
-open_dir = QAction("Open folder")
-open_history_file = QAction("Open history")
-settings = QAction("Settings")
-exits = QAction("Quit")
+process = QAction(dictionary('start'))
+open_dir = QAction(dictionary('folder'))
+open_history_file = QAction(dictionary('history'))
+settings = QAction(dictionary('settings'))
+exits = QAction(dictionary('exit'))
 
 open_dir.setIcon(ico_folder)
 process.setIcon(ico_start)
@@ -77,4 +78,4 @@ menu.addSeparator()
 menu.addAction(exits)
 
 tray.setContextMenu(menu)
-tray.setToolTip("Test")
+tray.setToolTip("Easily File manager")
