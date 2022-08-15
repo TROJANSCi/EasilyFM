@@ -27,7 +27,7 @@ dicts = {
         'exit': 'Chiqish'
 
     },
-    'cn': {
+    'zh': {
         'start': '开始',
         'stop': '停止',
         'folder': '打开目标文件夹',

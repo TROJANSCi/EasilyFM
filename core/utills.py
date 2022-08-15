@@ -1,12 +1,11 @@
-import hjson
+import json
 from os import makedirs
 from os.path import expanduser, join, isdir
 
-from core.config import set_file, get_configure
+from core.config import SETTINGS, get_configure
 
 
 def check_finally_path() -> str:
-
     if get_configure().get('finally_path'):
         finally_path = get_configure().get('finally_path')
 
@@ -28,25 +27,26 @@ def check_finally_path() -> str:
 
     new_path = join(expanduser('~'), 'Downloads')
     makedirs(new_path, exist_ok=True)
+
     return new_path
 
 
-def change_settings(**kwargs):
-    with open(set_file, 'r+') as f:
-        h = hjson.load(f)
-        print(h)
-    #     data = hjson.load(f)
-    #     for j in kwargs:
-    #         data[j] = kwargs[j] if j != 'monitoring_path' else [kwargs[j]]
-    #         f.seek(0)
-    #         hjson.dump(data, f, indent=4, ensure_ascii=False)
-    #         f.truncate()
-    # f.close()
-    # return kwargs.get(str(*kwargs))
+def change_settings(**kwargs) -> str:
+    with open(SETTINGS, 'r+', encoding='utf-8') as f:
+        data = json.load(f)
+        for j in kwargs:
+            data[j] = kwargs[j] if j != 'monitoring_path' else [kwargs[j]]
+            f.seek(0)
+            json.dump(data, f, indent=4, ensure_ascii=False)
+            f.truncate()
+    f.close()
+
+    return kwargs.get(str(*kwargs))
 
 
 def create_extension_directory(ext: str, finally_dir: str = check_finally_path()) -> str:
     name = f"#{ext.title()}"
     path = join(finally_dir, name)
     makedirs(path, exist_ok=True)
+
     return path

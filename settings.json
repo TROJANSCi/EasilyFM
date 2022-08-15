@@ -1,0 +1,19 @@
+{
+    "monitoring_path": [
+
+    ],
+    "finally_path": "C:\\Users\\TROJANSCi",
+    "finally_dir": "Downloads",
+    "black_list_file": [
+        "desktop.ini"
+    ],
+    "black_list_ext": [
+        ".crdownload",
+        ".download",
+        ".tvdownload",
+        ".opdownload",
+        ".tmp"
+    ],
+    "history": true,
+    "language": "ru"
+}
