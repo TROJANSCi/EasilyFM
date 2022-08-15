@@ -1,0 +1,154 @@
+{
+  "en": {
+    "start": "Start",
+    "stop": "Stop",
+    "folder": "Open destination folder",
+    "history": "History",
+    "settings": "Settings",
+    "exit": "Exit"
+  },
+  "ar": {
+    "start": "بداية",
+    "stop": "قف",
+    "folder": "مجلد الوجهة المفتوحة",
+    "history": "تاريخ",
+    "settings": "إعدادات",
+    "exit": "مخرج"
+  },
+  "ru": {
+    "start": "Запустить",
+    "stop": "Остановить",
+    "folder": "Открыть папку назначения",
+    "history": "История",
+    "settings": "Настройки",
+    "exit": "Выход"
+  },
+  "uz": {
+    "start": "Start",
+    "stop": "Stop",
+    "folder": "Belgilangan manzil papkasini oching",
+    "history": "Tarix",
+    "settings": "Sozlash",
+    "exit": "Chiqish"
+  },
+  "zh": {
+    "start": "开始",
+    "stop": "停止",
+    "folder": "打开目标文件夹",
+    "history": "历史",
+    "settings": "设置",
+    "exit": "出口"
+  },
+  "de": {
+    "start": "Anfang",
+    "stop": "Halt",
+    "folder": "Zielordner öffnen",
+    "history": "Geschichte",
+    "settings": "Einstellungen",
+    "exit": "Ausgang"
+  },
+  "fr": {
+    "start": "Commencer",
+    "stop": "Arrêt",
+    "folder": "Dossier de destination ouvert",
+    "history": "Histoire",
+    "settings": "Réglages",
+    "exit": "Sortir"
+  },
+  "uk": {
+    "start": "Почати",
+    "stop": "СТОП",
+    "folder": "Відкрийте папку призначення",
+    "history": "Історія",
+    "settings": "Налаштування",
+    "exit": "Вихід"
+  },
+  "be": {
+    "start": "Пачынаць",
+    "stop": "Прыпынак",
+    "folder": "Адкрытая тэчка прызначэння",
+    "history": "Гісторыя",
+    "settings": "Налады",
+    "exit": "Выхадзіць"
+  },
+  "da": {
+    "start": "Start",
+    "stop": "Hold op",
+    "folder": "Åben destinationsmappe",
+    "history": "Historie",
+    "settings": "Indstillinger",
+    "exit": "Afslut"
+  },
+  "es": {
+    "start": "Comienzo",
+    "stop": "Deténgase",
+    "folder": "Carpeta de destino abierta",
+    "history": "Historia",
+    "settings": "Ajustes",
+    "exit": "Salida"
+  },
+  "et": {
+    "start": "Alustama",
+    "stop": "Peatus",
+    "folder": "Avatud sihtkoha kaust",
+    "history": "Ajalugu",
+    "settings": "Sätted",
+    "exit": "Väljumine"
+  },
+  "fi": {
+    "start": "alkaa",
+    "stop": "Lopettaa",
+    "folder": "Avaa kohdekansio",
+    "history": "Historia",
+    "settings": "asetukset",
+    "exit": "Poistuminen"
+  },
+  "ga": {
+    "start": "Cuir ar siúl",
+    "stop": "Stop de",
+    "folder": "Fillteán ceann scríbe oscailte",
+    "history": "Scéal",
+    "settings": "Socruithe",
+    "exit": "An slí amach"
+  },
+  "hi": {
+    "start": "शुरू",
+    "stop": "विराम",
+    "folder": "गंतव्य फ़ोल्डर खोलें",
+    "history": "इतिहास",
+    "settings": "समायोजन",
+    "exit": "बाहर निकलना"
+  },
+  "it": {
+    "start": "Inizio",
+    "stop": "Fermare",
+    "folder": "Apri la cartella di destinazione",
+    "history": "Storia",
+    "settings": "Impostazioni",
+    "exit": "Uscita"
+  },
+  "ja": {
+    "start": "始める",
+    "stop": "止まる",
+    "folder": "宛先フォルダーを開きます",
+    "history": "歴史",
+    "settings": "設定",
+    "exit": "出口"
+  },
+  "ko": {
+    "start": "시작",
+    "stop": "중지",
+    "folder": "대상 폴더 열기",
+    "history": "역사",
+    "settings": "설정",
+    "exit": "출구"
+  },
+  "pl": {
+    "start": "Początek",
+    "stop": "Zatrzymaj się",
+    "folder": "Otwórz folder docelowy",
+    "history": "Historia",
+    "settings": "Ustawienia",
+    "exit": "Wyjście"
+  }
+}
