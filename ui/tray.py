@@ -1,13 +1,13 @@
-import time
 import threading
+import time
 from os.path import dirname, abspath, join
 
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 
-from modules.utils import open_finally_dir, open_history, open_settings
-from modules.manager import monitoring_paths
 from core.language import dictionary
+from modules.manager import monitoring_paths
+from modules.utils import open_finally_dir, open_history, open_settings
 
 status = False
 
@@ -24,10 +24,14 @@ def process_monitor():
         process.setText(dictionary('start'))
         process.setIcon(ico_start)
         status = False
+        tray.setToolTip("└► Easily File manager - stopped.")
+
     else:
         process.setText(dictionary('stop'))
         process.setIcon(ico_stop)
         status = True
+        tray.setToolTip("└► Easily File manager - started.")
+
     thread = threading.Thread(target=start_monitor)
     thread.setDaemon(True)
     thread.start()
@@ -44,11 +48,9 @@ ico_exits = QIcon(join(dirname(abspath(__file__)), "exits.png"))
 ico_icons = QIcon(join(dirname(abspath(__file__)), "icons.png"))
 ico_history = QIcon(join(dirname(abspath(__file__)), "history.png"))
 
-
 tray = QSystemTrayIcon()
 tray.setIcon(ico_icons)
 tray.setVisible(True)
-
 
 menu = QMenu()
 
@@ -80,4 +82,4 @@ menu.addSeparator()
 menu.addAction(exits)
 
 tray.setContextMenu(menu)
-tray.setToolTip("Easily File manager")
+tray.setToolTip("└► Easily File manager - stopped.")
