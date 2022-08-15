@@ -2,7 +2,7 @@ import json
 from os import makedirs
 from os.path import expanduser, join, isdir
 
-from core.config import SETTINGS, get_configure
+from core.config import SETTINGS, get_configure, get_dict, DIRNAME
 
 
 def check_finally_path() -> str:
@@ -45,7 +45,8 @@ def change_settings(**kwargs) -> str:
 
 
 def create_extension_directory(ext: str, finally_dir: str = check_finally_path()) -> str:
-    name = f"#{ext.title()}"
+    name = f"#{get_dict(ext, DIRNAME)}"
+    print(name)
     path = join(finally_dir, name)
     makedirs(path, exist_ok=True)
 

@@ -1,7 +1,6 @@
-import time
-from shutil import move
+
 from typing import Union
-from os import listdir
+from os import listdir, rename
 from os.path import expanduser, join, splitext, exists
 
 from core.config import get_configure, BLACKLIST_EXT
@@ -40,7 +39,8 @@ def file_movie(files: list, path: str):
                     if not exists(join(file_path, file)):
                         old = join(path, file)
                         new = join(file_path, file)
-                        move(old, new)
+                        print(old, new)
+                        rename(old, new)
 
                         if get_configure().get('history'):
                             logging.info(f"{old} -> {new}")
@@ -53,7 +53,7 @@ def file_movie(files: list, path: str):
 
                         old = join(path, file)
                         new = join(file_path, name)
-                        move(old, new)
+                        rename(old, new)
 
                         if get_configure().get('history'):
                             logging.info(f"{old} -> {new}")

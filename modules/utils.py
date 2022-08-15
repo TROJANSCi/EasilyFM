@@ -13,4 +13,4 @@ def open_history():
 
 
 def open_settings():
-    startfile(join(join(APP_DIR, 'core'), 'settings.hjson'))
+    startfile(join(APP_DIR, 'settings.json'))

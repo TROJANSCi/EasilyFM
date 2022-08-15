@@ -5,7 +5,7 @@ from os.path import dirname, abspath, join
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 
-from core.language import dictionary
+from core.config import get_dict
 from modules.manager import monitoring_paths
 from modules.utils import open_finally_dir, open_history, open_settings
 
@@ -15,19 +15,19 @@ status = False
 def start_monitor():
     while status:
         monitoring_paths()
-        time.sleep(5)
+        time.sleep(0.5)
 
 
 def process_monitor():
     global status
     if status:
-        process.setText(dictionary('start'))
+        process.setText(get_dict('start'))
         process.setIcon(ico_start)
         status = False
         tray.setToolTip("└► Easily File manager - stopped.")
 
     else:
-        process.setText(dictionary('stop'))
+        process.setText(get_dict('stop'))
         process.setIcon(ico_stop)
         status = True
         tray.setToolTip("└► Easily File manager - started.")
@@ -54,11 +54,11 @@ tray.setVisible(True)
 
 menu = QMenu()
 
-process = QAction(dictionary('start'))
-open_dir = QAction(dictionary('folder'))
-open_history_file = QAction(dictionary('history'))
-settings = QAction(dictionary('settings'))
-exits = QAction(dictionary('exit'))
+process = QAction(get_dict('start'))
+open_dir = QAction(get_dict('folder'))
+open_history_file = QAction(get_dict('history'))
+settings = QAction(get_dict('settings'))
+exits = QAction(get_dict('exit'))
 
 open_dir.setIcon(ico_folder)
 process.setIcon(ico_start)

@@ -194,7 +194,7 @@ extension = {
         '.ezc', '.ezp', '.fan', '.fcd', '.fcstd', '.fcstd1', '.fcw', '.flx', '.fmz', '.fnc', '.fpd', '.fpp', '.fz',
         '.fzb', '.fzm', '.fzp', '.fzz', '.g', '.g3d', '.gbx', '.gcd', '.gcode', '.gds', '.geo', '.gsm', '.gxc',
         '.gxd', '.gxh', '.gxm', '.hcp', '.hsc', '.hsf', '.hus', '.iam', '.iba', '.ic3d', '.icd', '.ics', '.ide',
-        '.idv', '.idw', '.if', '.ifcxml', '.ifczip', '.igs', '.ipf', '.ipj', '.ipn', '.ipt', '.ise', '.iso',
+        '.idv', '.idw', '.if', '.ifcxml', '.ifczip', '.igs', '.ipf', '.ipj', '.ipn', '.ipt', '.ise',
         '.isoz', '.jam', '.jbc', '.job', '.jt', '.jvsg', '.jvsgz', '.kit', '.l3b', '.lcf', '.ldr', '.ldt', '.li3d',
         '.lia', '.lin', '.lizd', '.logicly', '.ltl', '.lyc', '.lyr', '.mc9', '.mcd', '.mcx', '.mdl', '.mhs', '.mmg',
         '.mod', '.model', '.modfem', '.mp11', '.mp13', '.mp14', '.mp7', '.ms11', '.ms13', '.ms14', '.msm', '.nc',
