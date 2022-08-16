@@ -1,8 +1,6 @@
 {
-    "monitoring_path": [
-        "C:\\Users\\TROJANSCi\\Downloads"
-    ],
-    "finally_path": "C:\\Users\\TROJANSCi",
+    "monitoring_path": [],
+    "finally_path": "C:\\Users\\MaxD",
     "finally_dir": "Downloads",
     "black_list_file": [
         "desktop.ini"
@@ -15,5 +13,5 @@
         ".tmp"
     ],
     "history": true,
-    "language": "ru"
+    "language": "en"
 }
