@@ -1,7 +1,6 @@
 {
     "monitoring_path": [
-        "C:\\Users\\MaxD\\Downloads",
-        "C:\\Users\\MaxD\\Desktop"
+        "C:\\Users\\MaxD\\Downloads"
     ],
     "finally_path": "C:\\Users\\MaxD",
     "finally_dir": "Downloads",
@@ -16,5 +15,6 @@
         ".tmp"
     ],
     "history": true,
-    "language": "en"
+    "language": "en",
+    "monitoring_interval": 5
 }

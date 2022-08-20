@@ -5,7 +5,7 @@ from os.path import dirname, abspath, join
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 
-from core.config import get_dict
+from core.config import get_dict, get_configure
 from modules.manager import monitoring_paths
 from modules.utils import open_finally_dir, open_history, open_settings
 
@@ -15,7 +15,7 @@ status = False
 def start_monitor():
     while status:
         monitoring_paths()
-        time.sleep(0.5)
+        time.sleep(get_configure().get("monitoring_interval"))
 
 
 def process_monitor():

@@ -39,7 +39,6 @@ def file_movie(files: list, path: str):
                     if not exists(join(file_path, file)):
                         old = join(path, file)
                         new = join(file_path, file)
-                        print(old, new)
                         rename(old, new)
 
                         if get_configure().get('history'):

@@ -46,7 +46,6 @@ def change_settings(**kwargs) -> str:
 
 def create_extension_directory(ext: str, finally_dir: str = check_finally_path()) -> str:
     name = f"#{get_dict(ext, DIRNAME)}"
-    print(name)
     path = join(finally_dir, name)
     makedirs(path, exist_ok=True)
 
