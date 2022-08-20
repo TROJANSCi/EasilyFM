@@ -1,7 +1,9 @@
-from os import startfile
 from os.path import join
-from core.utills import check_finally_path
+
+from startfile import startfile
+
 from core.config import APP_DIR
+from core.utills import check_finally_path
 
 
 def open_finally_dir():

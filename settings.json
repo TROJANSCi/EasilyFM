@@ -1,5 +1,8 @@
 {
-    "monitoring_path": [],
+    "monitoring_path": [
+        "C:\\Users\\MaxD\\Downloads",
+        "C:\\Users\\MaxD\\Desktop"
+    ],
     "finally_path": "C:\\Users\\MaxD",
     "finally_dir": "Downloads",
     "black_list_file": [
